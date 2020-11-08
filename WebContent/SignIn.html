@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>SignUp</title>
+<style>
+.b{
+background-image:url("p2.jpg");
+background-size:cover;
+}
+.example2 {
+    background: url(p2.jpg);
+    background-repeat: no-repeat;
+    background-size: 1700px 1200px;
+}
+.d1{
+height:520px;
+width:550px;
+margin-left:500px;
+background-color:transparent;
+box-shadow:10px 10px 10px 5px hotpink;
+}
+.d2{
+margin-left:50px;
+padding-top:30px;
+}
+.d{
+margin-top:200px;
+margin-left:680px;
+color:white;
+}
+td{
+color:white;
+}
+a{
+color:hotpink;
+}
+.dd{
+width:100px;
+height:50px;
+border-radius:15px;
+}
+.dd:hover{
+background-color:grey;
+}
+a:hover{
+color:white;
+}
+</style>
+</head>
+<body onLoad="form_load(this)" class="example2">
+<h1 class="d"><u>REGISTRATION</u></h1>
+<div class="d1">
+<form name="form1"  OnSubmit="return checkFields()" action="Register.jsp"
+   method="post"="form_load(this)">
+<div class="d2">
+<table>
+<tr>
+<td>
+FirstName:
+</td>
+<td>
+&nbsp
+</td>
+<td>
+<input type="text" name="f1" required>
+</td>
+</tr>
+<tr>
+<td><br></td>
+</tr>
+
+<tr>
+<td>
+LastName:
+</td>
+<td>
+&nbsp
+</td>
+<td>
+<input type="text" name="l1" required>
+</td>
+</tr>
+<tr>
+<td><br></td>
+</tr>
+
+<tr>
+<td>
+UserName:
+</td>
+<td>
+&nbsp
+</td>
+<td>
+<input type="text" name="r1" pattern="[a-zA-Z0-9 ]{8,}" title="please fill it with characters" required>
+</td>
+</tr>
+<tr>
+<td><br></td>
+</tr>
+
+<tr>
+<td>
+Email:
+</td>
+<td>
+&nbsp
+</td>
+<td>
+<input type="text" name="e1" placeholder="@gmail.com" required>
+</td>
+</tr>
+<tr>
+<td><br></td>
+</tr>
+
+<tr>
+<td>
+phone no:
+</td>
+<td>
+&nbsp
+</td>
+<td>
+<input type="tel" name="p1" maxlength="10" required>
+</td>
+</tr>
+<tr>
+<td><br></td>
+</tr>
+
+<tr>
+<td>
+Password:
+</td>
+<td>
+&nbsp
+</td>
+<td>
+<input type="password" name="pass1" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+</td>
+</tr>
+<tr>
+<td><br></td>
+</tr>
+
+<tr>
+<td>
+Confirm Password:
+</td>
+<td>
+&nbsp
+</td>
+<td>
+<input type="password" name="cpass1" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+</td>
+</tr>
+<tr>
+<td><br></td>
+</tr>
+
+<tr>
+<td>
+
+</td>
+<td>
+<input type="submit" value="Signup" name="s1" class="dd">
+</td>
+<td>
+<input type="button" value="reset" onClick="form_load(this)" class="dd">
+</td>
+</tr>
+<tr>
+<td><br></td>
+</tr>
+</table>
+<br>
+<table>
+<tr>
+<td>
+<h3 style="color:white;">For Login--></h3>
+</td>
+<td>
+&nbsp
+</td>
+<td>
+ <a href="Login.html" > Login</a>
+</td>
+</tr>
+</table>
+ </div>
+
+</form>
+</div>
+</body>
+</html>
+
+<!--
+
+FirstName: &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp <input type="text" name="f1"><br><br>
+LastName: &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<input type="text" name="l1"><br><br>
+UserName: &nbsp &nbsp <input type="text" name="r1"><br><br>
+Email: &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp<input type="text" name="e1" placeholder="@gmail.com"><br><br>
+phone no:&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<input type="number" name="p1" maxlength="10"><br><br>
+Password:&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp   <input type="password" name="pass1"><br><br>
+Confirm Password:&nbsp   <input type="password" name="cpass1"><br><br>
+ &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <input type="submit" value="Signup" name="s1">
+ &nbsp &nbsp &nbsp &nbsp &nbsp<input type="button" value="reset" onClick="form_load(this)">
+ 
+ 
+ 
+ 
+ 
+  <hr>
+ <center>
+ If  you have account please Login<br>
+ <a href="Login.html"> Login</a>
+ </center>
+ -->
